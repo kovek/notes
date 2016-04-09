@@ -7,6 +7,7 @@
 <script type="text/javascript" src="./CollapsibleLists.js"></script>
 <!-- 2016-04-04 Mon 16:56 -->
 <meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta  name="generator" content="Org-mode" />
 <meta  name="author" content="kevin" />
 <link rel="stylesheet" type="text/css" href="./style.css"/>
@@ -260,7 +261,7 @@ var uls = document.getElementsByTagName("ul");
 for (aul in uls) {
   if (!isNaN(aul)) {
     CollapsibleLists.applyTo(uls[aul]);
-  } 
+  }
 }
 
 var open_lists = document.getElementsByClassName("collapsibleListOpen");
