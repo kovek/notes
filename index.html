@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>foo</title>
+<script type="text/javascript" src="./CollapsibleLists.js"></script>
+<!-- 2016-04-04 Mon 16:56 -->
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<meta  name="author" content="kevin" />
+<link rel="stylesheet" type="text/css" href="./style.css"/>
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">foo</h1>
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1">April 4th</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+
+<ul class="org-ul"><li><a id="sec-1-1" name="sec-1-1"></a>Binary Search Trees<br  /><ul class="org-ul"><li><a id="sec-1-1-1" name="sec-1-1-1"></a>A binary search tree (BST) is a binary tree T with the <span class="underline">BST property</span>:<br  /><ul class="org-ul"><li><a id="sec-1-1-1-1" name="sec-1-1-1-1"></a>For any node v in T,<br  /><ul class="org-ul"><li><a id="sec-1-1-1-1-1" name="sec-1-1-1-1-1"></a>If y in Lv, the left subtree of v, then key(y) &lt;= key(v)<br  /></li>
+
+<li><a id="sec-1-1-1-1-2" name="sec-1-1-1-1-2"></a>If x in Rv, the right subtree of v, then key(x) &gt;= key(v)<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-1-1-2" name="sec-1-1-1-2"></a>This is not a balanced binary search three. Not all have degree 3.<br  /></li>
+
+<li><a id="sec-1-1-1-3" name="sec-1-1-1-3"></a>Depth is not log(n)<br  /></li>
+
+<li><a id="sec-1-1-1-4" name="sec-1-1-1-4"></a>We do not try to make all nodes have two children (except for lowest level), as in Heap.<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-1-2" name="sec-1-1-2"></a>[ Technicalities: have pointer to Left + right childer, pointer to parent. ]<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-2" name="sec-1-2"></a>BST allow for a large number of operations<br  /></li>
+
+<li><a id="sec-1-3" name="sec-1-3"></a>Suppose we want to search for key k.<br  /><ul class="org-ul"><li><a id="sec-1-3-1" name="sec-1-3-1"></a>Compare current key k to the key(root). If k is smaller, recurse on left child. If k is bigger recurse on the right child.<br  /></li>
+
+<li><a id="sec-1-3-2" name="sec-1-3-2"></a>If it does not find it, the key is not in T.<br  /></li>
+
+<li><a id="sec-1-3-3" name="sec-1-3-3"></a>This takes O(d) time. We might need to go all to the way the leaf and the path we are searching might be the worst possible path.<br  /></li>
+
+<li><a id="sec-1-3-4" name="sec-1-3-4"></a>What is d? The number of nodes?<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-4" name="sec-1-4"></a>Insert:<br  /><ul class="org-ul"><li><a id="sec-1-4-1" name="sec-1-4-1"></a>Mimic the search operation and insert with key(x) as a leaf when the search ends at a N/C<br  /></li>
+
+<li><a id="sec-1-4-2" name="sec-1-4-2"></a>Insert at the millnode where we got stuck.<br  /></li>
+
+<li><a id="sec-1-4-3" name="sec-1-4-3"></a>Keep a pointer to head.<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-5" name="sec-1-5"></a>Min/Max:<br  /><ul class="org-ul"><li><a id="sec-1-5-1" name="sec-1-5-1"></a>Move to the left/right until there is no left/right child.<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-6" name="sec-1-6"></a>Predecessor/Successor:<br  /><ul class="org-ul"><li><a id="sec-1-6-1" name="sec-1-6-1"></a>The pred/succ of a node are the nodes x &amp; y with the key adjacent to key (v) in sorted order.<br  /></li>
+
+<li><a id="sec-1-6-2" name="sec-1-6-2"></a>That is useful because everything can be compared to both the predecessor/successor and the current tested node and get the same answer (greater than or lesser than). So, root could be replaced by predecessor/successor and everything would still hold.<br  /></li>
+
+<li><a id="sec-1-6-3" name="sec-1-6-3"></a>Successor:<br  /><ul class="org-ul"><li><a id="sec-1-6-3-1" name="sec-1-6-3-1"></a>Min of right tree<br  /></li>
+
+<li><a id="sec-1-6-3-2" name="sec-1-6-3-2"></a>If not, then first ancestor which is bigger than key.<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-6-4" name="sec-1-6-4"></a>Where are the succ/pred in T?<br  /></li>
+
+<li><a id="sec-1-6-5" name="sec-1-6-5"></a>Claim: Either pred(v) is a descendent of v in T or v is a descendent of pred(v)<br  /></li>
+
+<li><a id="sec-1-6-6" name="sec-1-6-6"></a>Proof:<br  /><ul class="org-ul"><li><a id="sec-1-6-6-1" name="sec-1-6-6-1"></a>If not, E x s.t. pred(x) in Lx and v in Rx<br  /></li>
+
+<li><a id="sec-1-6-6-2" name="sec-1-6-6-2"></a>Then pred(v) in Lx, v in Rx.<br  /></li>
+
+<li><a id="sec-1-6-6-3" name="sec-1-6-6-3"></a>That is impossible, if you sort the keys, you would have {&#x2026;, pred(v), x, v, &#x2026;}<br  /></li>
+
+<li><a id="sec-1-6-6-4" name="sec-1-6-6-4"></a>key(pred(v)) &lt;= key(x) &lt;= key(v)<br  /></li>
+
+<li><a id="sec-1-6-6-5" name="sec-1-6-6-5"></a>So we have two cases:<br  /><ul class="org-ul"><li><a id="sec-1-6-6-5-1" name="sec-1-6-6-5-1"></a>Case 1: Predecessor of v, is a descendent of v.<br  /><ul class="org-ul"><li><a id="sec-1-6-6-5-1-1" name="sec-1-6-6-5-1-1"></a>Max of Lv<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-6-6-5-2" name="sec-1-6-6-5-2"></a>Case 2: Predecessor is an ancestor of v.<br  /><ul class="org-ul"><li><a id="sec-1-6-6-5-2-1" name="sec-1-6-6-5-2-1"></a>So, pred(v) is on the path from v up to r. It must be the first node from you reach after a left move going up.<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-6-6-5-3" name="sec-1-6-6-5-3"></a>Note: If v has a left child then we must be on case 1.<br  /><ul class="org-ul"><li><a id="sec-1-6-6-5-3-1" name="sec-1-6-6-5-3-1"></a>Because x, the first left ancestor, would be key(x) &lt; min(Lv)<br  /></li></ul>
+</li></ul>
+</li></ul>
+</li>
+
+<li><a id="sec-1-6-7" name="sec-1-6-7"></a>Deletion:<br  /><ul class="org-ul"><li><a id="sec-1-6-7-1" name="sec-1-6-7-1"></a>Suppose we want to delete v.<br  /><ul class="org-ul"><li><a id="sec-1-6-7-1-1" name="sec-1-6-7-1-1"></a>1. v is a leaf (0 children).<br  /><ul class="org-ul"><li><a id="sec-1-6-7-1-1-1" name="sec-1-6-7-1-1-1"></a>easy, just remove it<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-6-7-1-2" name="sec-1-6-7-1-2"></a>2. v has 1 child<br  /><ul class="org-ul"><li><a id="sec-1-6-7-1-2-1" name="sec-1-6-7-1-2-1"></a>easy, "splice" it out. Make the pointer to v point to child of v.<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-6-7-1-3" name="sec-1-6-7-1-3"></a>3. v has 2 children<br  /><ul class="org-ul"><li><a id="sec-1-6-7-1-3-1" name="sec-1-6-7-1-3-1"></a>move its predecessor or successor to the deleted node location. Splice the moved node if needed.<br  /></li>
+
+<li><a id="sec-1-6-7-1-3-2" name="sec-1-6-7-1-3-2"></a>Why does this work?<br  /><ul class="org-ul"><li><a id="sec-1-6-7-1-3-2-1" name="sec-1-6-7-1-3-2-1"></a>v has 2 children. So v has a left child so pred(v) in Lv.<br  /></li>
+
+<li><a id="sec-1-6-7-1-3-2-2" name="sec-1-6-7-1-3-2-2"></a>It's impossible for the pred(v) to have two children, because in Lv, we will go all the way to the right, until no more right child. By definition, no right child.<br  /></li></ul>
+</li></ul>
+</li></ul>
+</li>
+
+<li><a id="sec-1-6-7-2" name="sec-1-6-7-2"></a>So this takes O(d) time, but d could be Omega(b).<br  /></li></ul>
+</li>
+
+<li><a id="sec-1-6-8" name="sec-1-6-8"></a>E.g.: Build BST by repeatedly inserting numbers from an ordered list.<br  /></li>
+
+<li><a id="sec-1-6-9" name="sec-1-6-9"></a>For this reason there are several enhancements to BSTs to ensude d = O(log(b)<br  /><ul class="org-ul"><li><a id="sec-1-6-9-1" name="sec-1-6-9-1"></a>e.g.<br  /><ul class="org-ul"><li><a id="sec-1-6-9-1-1" name="sec-1-6-9-1-1"></a>Balanced BSTs<br  /></li>
+
+<li><a id="sec-1-6-9-1-2" name="sec-1-6-9-1-2"></a>Red-Black BSTs<br  /></li>
+
+<li><a id="sec-1-6-9-1-3" name="sec-1-6-9-1-3"></a>AVC trees<br  /></li>
+
+<li><a id="sec-1-6-9-1-4" name="sec-1-6-9-1-4"></a>Splay Trees, etc.<br  /></li></ul>
+</li></ul>
+</li>
+
+<li><a id="sec-1-6-10" name="sec-1-6-10"></a>Rank selection<br  /><ul class="org-ul"><li><a id="sec-1-6-10-1" name="sec-1-6-10-1"></a><span class="todo TODO">TODO</span> FINISH Suppose we want to find the lth smallest key. This is<br  /></li></ul>
+</li></ul>
+</li></ul>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: kevin</p>
+<p class="date">Created: 2016-04-04 Mon 16:56</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/">Emacs</a> 24.5.1 (<a href="http://orgmode.org">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+<script type="text/javascript">
+
+var uls = document.getElementsByTagName("ul");
+for (aul in uls) {
+  if (!isNaN(aul)) {
+    CollapsibleLists.applyTo(uls[aul]);
+  } 
+}
+
+var open_lists = document.getElementsByClassName("collapsibleListOpen");
+Array.prototype.forEach.call(open_lists, function(el, i, arr) {
+  CollapsibleLists.toggle(el);
+});
+
+</script>
+</body>
+</html>
